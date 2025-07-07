@@ -1,9 +1,8 @@
 ## Development Roadmap (Phased Approach)
-2M transactions/day
 
 #### Phase 1 (MVP - Core Lending Logic & Basic Integrations) 
 
-1. Core Services (Go-kit):
+1. Core Services (Go-kit)
 2. User Auth Service (with basic KYC/registration).
 3. Credit Decisioning Service (initial rule-based engine, placeholder for ML).
 4. Transaction Service.
@@ -12,7 +11,8 @@
 7. Notification Service (basic SMS/email).
 8. Consumer Facing: Basic web dashboard for payments/schedule.
 9. Merchant Facing: Basic API for integration (no plugins yet).
-10. Infrastructure: Cloud setup (basic Kubernetes cluster, managed databases, Kafka).
+10. Reporting: Basic API for integration 
+11. Infrastructure: Cloud setup (basic Kubernetes cluster, managed databases, Kafka).
 
 ### Phase 2: Feature Enhancement & Improvements
 
@@ -20,11 +20,12 @@
 2. Payment Orchestration: Integrate with multiple payment gateways. Implement sophisticated retry logic for failed payments.
 3. Installment Management: Full prepayment logic, detailed reporting.
 4. Merchant Tools: Develop plugins for popular e-commerce platforms (Shopify, WooCommerce). Merchant admin panel.
-5. Fraud Detection: Implement advanced fraud detection techniques beyond basic rules.
-6. Consumer App: Develop mobile apps (iOS/Android) with full dashboard features.
-7. Compliance: Enhance audit logging, start planning for regulatory reporting.
-8. Scalability Testing: Rigorous load testing to ensure 2M transactions/day can be handled.
-9. Security: Aim for PCI DSS Level 3 or higher. Conduct first penetration test.
+5. Reporting Tools: Reporting on admin panel (consume events from Kafka, process and store aggregated data)
+6. Fraud Detection: Implement advanced fraud detection techniques beyond basic rules.
+7. Consumer App: Develop mobile apps (iOS/Android) with full dashboard features.
+8. Compliance: Enhance audit logging, start planning for regulatory reporting.
+9. Scalability Testing: Rigorous load testing to ensure 2M transactions/day can be handled.
+10. Security: Aim for PCI DSS Level 3 or higher. Conduct first penetration test.
 
 ### Phase 3: New Features & Optimization
 
